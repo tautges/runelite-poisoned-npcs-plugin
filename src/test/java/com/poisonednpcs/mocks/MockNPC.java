@@ -322,7 +322,27 @@ public class MockNPC implements NPC {
     }
 
     @Override
+    public int getFootprintSize() {
+        return 0;
+    }
+
+    @Override
+    public int getAnimationHeightOffset() {
+        return 0;
+    }
+
+    @Override
+    public int getRenderMode() {
+        return 0;
+    }
+
+    @Override
     public WorldView getWorldView() {
+        return null;
+    }
+
+    @Override
+    public LocalPoint getCameraFocus() {
         return null;
     }
 
@@ -357,6 +377,18 @@ public class MockNPC implements NPC {
     @Override
     public NpcOverrides getChatheadOverrides() {
         return null;
+    }
+
+    @Nullable
+    @Override
+    public int[] getOverheadArchiveIds() {
+        return new int[0];
+    }
+
+    @Nullable
+    @Override
+    public short[] getOverheadSpriteIds() {
+        return new short[0];
     }
 
     @Override

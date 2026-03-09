@@ -7,6 +7,7 @@ public enum HitsplatType {
     OPPONENT_SPLASHED_BY_ME(12),
     OPPONENT_SPLASHED_BY_OTHER(13), // TODO: are by-NPC and by-other-player the same?
     OPPONENT_DAMAGED_BY_ME(16),
+    OPPONENT_DAMAGED_BY_ME_MAXHIT(43),
     OPPONENT_DAMAGED_BY_OTHER(17), // TODO: are by-NPC and by-other-player the same?
     OPPONENT_DAMAGED_BY_POISON(65), // TODO: distinction between poison from a certain source?
     ;

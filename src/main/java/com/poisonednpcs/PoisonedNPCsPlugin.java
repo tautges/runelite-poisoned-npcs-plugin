@@ -114,6 +114,7 @@ public class PoisonedNPCsPlugin extends Plugin {
 		HitsplatType hitsplatType = HitsplatType.of(hitsplat.getHitsplatType());
 		switch (hitsplatType) { // TODO: replace with mapping(?)
 			case OPPONENT_DAMAGED_BY_ME:
+            case OPPONENT_DAMAGED_BY_ME_MAXHIT:
 				opponent.getHealthStatus().getHitTracker().trackHit(new Hit(Optional.of(getWieldedWeapon()), hitsplat));
 				break;
 			case OPPONENT_DAMAGED_BY_POISON:
